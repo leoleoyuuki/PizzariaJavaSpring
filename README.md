@@ -1,12 +1,7 @@
 # 🍕 🤓👍🏽 Don Benezinho's Pizzaria
 
-CP II - **Java Advanced** aplicado em 29/04/2024.
+CP II(Segunda Prova) - **Java Advanced** aplicado em 29/04/2024.
 
-| ![](documentos/fiap.jpg)                 | **Java Advanced** |
-|------------------------------------------|-------------------|
-| **ALUNO:**                               | **TURMA:** 2TDSPF |
-| **PROFESSOR:** Benefrancis do Nascimento | 29/04/2024        |
-| **CP II**                                | ****              |
 
 # Sumário
 
@@ -174,23 +169,3 @@ de fazer o **commit** e **push** do projeto no github.
 **Não será aceito para correção o link para o projeto no github**. O aluno que entregar apenas o link receberá nota
 **ZERO**
 
-<a id="_Correcao"></a>
-
-# Correção da Prova
-
-Nos próximos dias, a correção da prova será disponibilizada no github do professor (branch correcao):
-
-Para acessar digite no prompt:
-
-```shell
-git clone https://github.com/Benefrancis/cp2-2024-pf-pizzaria && cd cp2-2024-pf-pizzaria && git checkout correcao
-```
-
-A avaliação é em trio ( devido a grande quantidade de coisas para fazer Desenvolvimento, ORM, Testes e Documentação).
-
-**Não copie, não forneça e nem aceite o código de outro aluno.**
-O professor acessará o log do github e outras fontes para ver se a avaliação foi fraudada.
-Caso o arquivo compactado não tenha o log igual ao do github, a dupla receberá nota **ZERO**
-Em caso de fraude **de qualquer tipo** à atividade avaliativa, todos os envolvidos receberão nota **ZERO**
-
-Boa avaliação.
