@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+
+<body>
+
+<section th:fragment="copy" class="home section" id="home">
+
+    <div class="home__container container grid">
+
+        <img th:src="@{~/img/home-pizza.png}" alt="home image" class="home__img">
+
+        <div class="home__data">
+            <h1 class="home__title" th:text="${pizzaria?.nome}">
+                <!-- Don <br>-->
+                Pizzaria's <br>
+            </h1>
+
+            <p class="home__description">
+                Desfrute de pizzas artesanais de fazer água na boca. Nossas pizzas são feitas com ingredientes de
+                origem local. Aproveite e faça hoje mesmo uma encomenda online com muita facilidade e receba a sua
+                pizza quentinha em poucos minutos.
+            </p>
+
+            <a href="#" class="button">
+                Order Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>

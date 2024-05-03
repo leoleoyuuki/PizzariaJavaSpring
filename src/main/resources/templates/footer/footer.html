@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+
+<body>
+<footer th:fragment="copy" class="footer">
+    <div class="footer__container container grid">
+        <div>
+            <a href="" class="footer__logo">
+                <img th:src="@{~/img/logo.png}" alt="logo image" th:text="${pizzaria?.nome}">
+            </a>
+
+            <p class="footer__description">
+                O alimento para o corpo não é suficiente.<br>
+                Tem de haver alimento para a alma.
+            </p>
+        </div>
+
+        <div class="footer__content">
+            <div>
+                <h3 class="footer__title">Main Menu</h3>
+
+                <ul class="footer__links">
+                    <li><a href="" class="footer__link">About</a></li>
+                    <li><a href="" class="footer__link">Menus</a></li>
+                    <li><a href="" class="footer__link">Offer</a></li>
+                    <li><a href="" class="footer__link">Events</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer__title">Information</h3>
+
+                <ul class="footer__links">
+                    <li><a href="" class="footer__link">Contact</a></li>
+                    <li><a href="" class="footer__link">Order & Returns</a></li>
+                    <li><a href="" class="footer__link">Videos</a></li>
+                    <li><a href="" class="footer__link">Reservation</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer__title">Address</h3>
+
+                <ul class="footer__links">
+                    <li class="footer__information">
+                        Address <br>
+                        here
+                    </li>
+                    <li class="footer__information">9AM - 11PM</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer__title">Social Media</h3>
+
+                <ul class="footer__links footer__social">
+                    <a href="https://www.facebook.com/" class="footer__social-link" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="footer__social-link" target="_blank">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/" class="footer__social-link" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__copy container">
+        &copy; Copyright Md Irshad Ansari [ lightcode ] and Benefrancis do Nascimento All rights reserved
+    </div>
+</footer>
+
+
+</body>
+</html>

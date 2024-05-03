@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+
+
+<body>
+
+<header th:fragment="copy" class="header" id="header">
+
+    <nav class="nav container">
+
+        <a href="#" class="nav__logo">
+            <img th:src="@{~/img/logo.png}" alt="logo image" th:text="${pizzaria?.nome}">
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+
+            <ul class="nav__list">
+                <li class="nav__item"><a href="/site/#home" class="nav__link active-link">Início</a></li>
+                <li class="nav__item"><a href="/site/#about" class="nav__link">História</a></li>
+                <li class="nav__item"><a href="/site/#popular" class="nav__link">Popular</a></li>
+                <li class="nav__item"><a href="/site/#recently" class="nav__link">Moda</a></li>
+                <li class="nav__item"><a href="/site/cardapio" class="nav__link">Cardápio</a></li>
+            </ul>
+
+            <div class="nav__close" id="nav-close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <img th:src="@{~/img/pizza-slice.png}" alt="nav image" class="nav__img-1">
+
+        </div>
+
+        <div class="nav__buttons">
+            <!-- Visualizar o carrinho de compras -->
+            <a href="/site/cart" class="nav__link">
+                <i class="fa-solid  fa-cart-shopping nav-cart nav__item" id="nav-cart"></i>
+            </a>
+
+
+            <i class="fa-regular fa-moon change-theme" id="theme-button"></i>
+
+            <div class="nav__toggle" id="nav-toggle">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+        </div>
+
+    </nav>
+
+</header>
+
+</body>
+</html>

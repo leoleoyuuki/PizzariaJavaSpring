@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://${DB_DESENV_SERVER}:${DB_DESENV_PORT}/${DB_DESENV_NAME}?createDatabaseIfNotExist=true
+    username: ${DB_DESENV_USERNAME}
+    password: ${DB_DESENV_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: create
+    open-in-view: false
+    show-sql: true

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+<body>
+
+<section th:fragment="copy" class="about section" id="about">
+
+    <div class="about__container container grid">
+
+        <div class="about__data">
+            <span class="section__subtitle">About Us</span>
+
+            <h2 class="section__title">
+                Oferecemos <br>
+                Comida saudável
+            </h2>
+
+            <p class="about__description">
+                Dedicamo-nos a confecionar pizzas de fazer crescer água na boca, feitas apenas com os ingredientes
+                locais mais frescos e da mais alta qualidade. Acreditamos que a utilização de ingredientes frescos não
+                só melhora o sabor das nossas pizzas, mas também oferece ao nosso cliente uma experiência alimentar
+                saudável.
+                <br>
+                <br>
+                Por isso, entre e prove a diferença - mal podemos esperar para o servir!
+            </p>
+        </div>
+
+        <img th:src="@{~/img/about/logotipo.png}" alt="about image" class="about__img">
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Prof. Benefrancis do Nascimento"/>
+
+    <title>Cardapio</title>
+
+    <!--~~~~~~~~~~~~~~~ favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" th:href="@{~/img/favicon.png}" type="image/x-icon">
+
+    <!--~~~~~~~~~~~~~~~ font awesome ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" th:href="@{~/css/styles.css}">
+
+
+</head>
+
+
+<body>
+<!--~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~-->
+<div th:insert="~{/header/header :: copy}"></div>
+
+<!--~~~~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~~-->
+<main class="main">
+
+
+    <!--~~~~~~~~~~~~~~~ CARDAPIO ~~~~~~~~~~~~~~~-->
+    <div th:insert="~{/cardapio/cardapio :: copy}"></div>
+
+
+
+</main>
+<!--~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~-->
+<div th:insert="~{/footer/footer :: copy}"></div>
+
+<!-- SCROLL UP -->
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="fa-solid fa-arrow-up"></i>
+</a>
+
+<!--~~~~~~~~~~~~~~~ SCROLLREVEAL ~~~~~~~~~~~~~~~-->
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+<!--~~~~~~~~~~~~~~~ MAIN JS ~~~~~~~~~~~~~~~-->
+<script th:src="@{~/js/main.js}"></script>
+</body>
+</html>

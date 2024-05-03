@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+
+<body>
+
+
+    <section th:fragment="copy" class="popular section" id="cardapio">
+
+        <span class="section__subtitle" th:text="${pizzaria?.nome}"></span>
+
+        <h2 class="section__title">Cardapio</h2>
+
+        <div class="popular__container container grid">
+
+
+            <div th:each="prod: ${pizzaria?.cardapio}" class="popular__card">
+
+                <img th:src="@{~/img/popular-pizza-1.png}" alt="popular image" class="popular__img">
+
+                <div class="popular__content">
+
+                    <a href="" class="popular__button">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+
+                    <h3 class="popular__name" th:text="${prod?.sabor?.nome}">Marguerita</h3>
+
+                    <p class="popular__description" th:text="${prod?.sabor?.descricao}">
+                        A classic pizza with tomato sauce,
+                        fresh mozzarella, and basil.
+                    </p>
+
+                    <p class="popular__price" th:text="${'R$ ' + prod?.preco}">$12.99</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
